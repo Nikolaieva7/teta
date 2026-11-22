@@ -1,0 +1,297 @@
+/* ==================================================
+   CASES PAGE
+   Кольори, шрифти й відступи — токени зі style.css
+================================================== */
+.cases-page {
+  color: var(--text-main);
+}
+
+.cases-scroll-scene {
+  position: relative;
+}
+
+/* ==================================================
+   HERO
+================================================== */
+.cases-hero {
+  position: sticky;
+  inset-block-start: var(--header-height);
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  block-size: 75svh;
+  min-block-size: 480px;
+  overflow: hidden;
+}
+
+.cases-hero__image {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cases-hero__overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    90deg,
+    rgb(23 21 34 / 0.9) 0%,
+    rgb(23 21 34 / 0.65) 55%,
+    rgb(23 21 34 / 0.2) 100%
+  );
+}
+
+.cases-hero__content {
+  margin-inline: auto;
+  padding: 60px var(--space-container) clamp(20px, 5vw, 80px);
+
+  & .section-label {
+    display: block;
+    margin-block-end: 30px;
+    font-size: 12px;
+    letter-spacing: 0.22em;
+    line-height: 1.6;
+    text-align: center;
+  }
+
+  & h1 {
+    max-inline-size: 850px;
+    font-size: clamp(28px, 2.8vw, 48px);
+    line-height: 1.25;
+    text-align: center;
+  }
+}
+
+/* ==================================================
+   CASE CONTENT
+================================================== */
+.cases-section {
+  position: relative;
+  z-index: 2;
+  margin-block-start: -1px;
+  padding: 60px var(--space-container) clamp(20px, 5vw, 80px);
+  background: var(--site-bg);
+}
+
+.cases-container {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  column-gap: clamp(36px, 7vw, 100px);
+  inline-size: 100%;
+  max-inline-size: 1100px;
+  margin-inline: auto;
+}
+
+/* ---------- Заголовок кейсу ---------- */
+.case-heading {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: center;
+  margin-block-end: 70px;
+
+  & h2 {
+    font-size: clamp(32px, 3.2vw, 46px);
+    font-style: italic;
+    line-height: 1.25;
+  }
+}
+
+.case-category {
+  display: block;
+  margin-block-end: 26px;
+  color: var(--gold-light);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  line-height: 1.8;
+  text-transform: uppercase;
+}
+
+/* ---------- Запит клієнта ---------- */
+.case-request {
+  grid-column: 2;
+  grid-row: 1;
+  align-self: center;
+  margin-block-end: 70px;
+  padding: 8px 0 8px 24px;
+  border-inline-start: 1px solid var(--gold-light);
+
+  & p {
+    color: var(--white-warm);
+    font-size: 17px;
+    line-height: 1.85;
+  }
+}
+
+/* Абзаци, які cases.js створює з порожніх рядків у тексті */
+:is(.case-request, .case-block) p + p {
+  margin-block-start: var(--space-sm);
+}
+
+/* ---------- Деталі ---------- */
+.case-details {
+  position: relative;
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: 52px clamp(36px, 7vw, 100px);
+
+  /* Декоративні ромби */
+  &::before,
+  &::after {
+    content: "\25C6" / "";
+    position: absolute;
+    z-index: 10;
+    color: var(--gold-light);
+    font-family: var(--font-primary);
+    font-size: 34px;
+    line-height: 1;
+    opacity: 0.8;
+    pointer-events: none;
+    animation: arrow-float 4s ease-in-out infinite;
+  }
+
+  &::before {
+    inset-inline-start: 75%;
+    inset-block-start: 42%;
+  }
+
+  &::after {
+    inset-inline-end: 25%;
+    inset-block-end: 50%;
+    animation-delay: 1.5s;
+  }
+}
+
+.case-block {
+  min-inline-size: 0;
+
+  & p {
+    color: #d4ccd8;
+    font-size: 17px;
+    font-weight: var(--fw-light);
+    line-height: 1.9;
+  }
+}
+
+.case-block__label {
+  margin-block-end: 16px;
+  color: var(--gold-light);
+  font-family: var(--font-primary);
+  font-size: 11px;
+  font-weight: var(--fw-medium);
+  letter-spacing: 0.15em;
+  line-height: 1.7;
+  text-transform: uppercase;
+}
+
+/* Результат — праворуч */
+.case-block--result {
+  grid-column: 2;
+  padding: 8px 0 8px 24px;
+  border-inline-start: 1px solid var(--gold-light);
+}
+
+@keyframes arrow-float {
+  0%,
+  100% {
+    opacity: 0.35;
+    translate: 0 0;
+  }
+
+  50% {
+    opacity: 1;
+    translate: 4px 5px;
+  }
+}
+
+/* ==================================================
+   НАВІГАЦІЯ МІЖ КЕЙСАМИ
+================================================== */
+.case-navigation {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  inline-size: 100%;
+  margin-block-start: 70px;
+  padding-block-start: 28px;
+}
+
+.case-arrow {
+  display: grid;
+  place-items: center;
+  inline-size: 46px;
+  aspect-ratio: 1;
+  color: var(--gold-light);
+  font-size: 22px;
+  background: transparent;
+  border: 1px solid var(--gold-light);
+  border-radius: 50%;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
+
+  @media (hover: hover) {
+    &:hover:not(:disabled) {
+      color: var(--ink);
+      background: var(--gold-light);
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+}
+
+.case-counter {
+  color: var(--text-muted);
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ==================================================
+   АДАПТИВ
+================================================== */
+@media (width <= 43.75rem) {
+  .cases-hero {
+    min-block-size: min(680px, 82svh);
+  }
+
+  .cases-container {
+    display: block;
+  }
+
+  .case-heading {
+    margin-block-end: 36px;
+  }
+
+  .case-request {
+    margin-block-end: 48px;
+    padding-inline-start: 20px;
+  }
+
+  :is(.case-request, .case-block) p {
+    font-size: 16px;
+  }
+
+  .case-details {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+
+  .case-block--result {
+    grid-column: 1;
+  }
+
+  .case-navigation {
+    margin-block-start: 48px;
+  }
+}

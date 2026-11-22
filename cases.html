@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags
+         ЗАГЛУШКА ДОМЕНУ: коли буде домен, заміни https://example.com на свій
+         (Ctrl+H → «https://example.com» → «https://твій-домен») у всіх HTML-файлах. -->
+    <title>Кейси — реальні історії клієнтів | Анна Багірова</title>
+    <meta name="description"
+        content="Реальні історії клієнтів Анни Багірової: тривога, самоцінність, гроші, відповідальність — з чим приходили і що змінилося після роботи.">
+    <link rel="canonical" href="https://example.com/cases.html">
+
+    <!-- Open Graph / Facebook / Telegram / Viber -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="uk_UA">
+    <meta property="og:url" content="https://example.com/cases.html">
+    <meta property="og:title" content="Кейси — реальні історії клієнтів | Анна Багірова">
+    <meta property="og:description"
+        content="Реальні історії клієнтів: з чим приходили на тета-сесії і що змінилося після роботи.">
+    <meta property="og:image" content="https://example.com/img/anna.teta_greatePhoto.webp">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Кейси — реальні історії клієнтів | Анна Багірова">
+    <meta name="twitter:description"
+        content="Реальні історії клієнтів: з чим приходили на тета-сесії і що змінилося після роботи.">
+    <meta name="twitter:image" content="https://example.com/img/anna.teta_greatePhoto.webp">
+
+    <!-- Schema.org structured data (JSON-LD).
+         Коли з'явиться Telegram — додай його адресу в "sameAs". -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Анна Багірова — Тетапрактик, Таролог, Нумеролог",
+      "image": "https://example.com/img/anna.teta_greatePhoto.webp",
+      "@id": "https://example.com/#professional-service",
+      "url": "https://example.com/",
+      "telephone": "+380976798394",
+      "priceRange": "€€",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "UA"
+      },
+      "sameAs": [
+        "https://www.instagram.com/anna.bagirova.teta/",
+        "https://www.facebook.com/anna.osipenko.bagirova"
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;1,400&amp;family=Playfair+Display+SC:ital,wght@0,400;1,400&amp;display=swap"
+        rel="stylesheet">
+
+    <meta name="theme-color" content="#191d30">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cases.css">
+</head>
+
+<body>
+    <header class="site-header" id="header">
+        <div class="header-inner">
+            <div class="brand-name">
+                <a href="index.html"><i>А.</i> Багірова</a>
+                <span class="brand-sub">Тетапрактик · таролог · нумеролог</span>
+            </div>
+
+            <nav class="site-nav" id="nav" aria-label="Головне меню">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="index.html#services">Послуги</a></li>
+                    <li><a href="cases.html" aria-current="page">Кейси</a></li>
+                    <li><a href="gallerySlade.html">Галерея</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="tel:+380976798394" class="header-contact">097 679 83 94</a>
+                <button class="hamburger" id="hamburger" type="button" aria-label="Меню" aria-expanded="false"
+                    aria-controls="nav">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="cases-page">
+        <div class="cases-scroll-scene">
+            <section class="cases-hero" aria-labelledby="cases-hero-title">
+                <img src="img/ned_25_zaporizhzhia.webp" alt="" class="cases-hero__image">
+                <div class="cases-hero__overlay"></div>
+
+                <div class="cases-hero__content">
+                    <span class="section-label">Реальні історії</span>
+                    <h1 id="cases-hero-title">
+                        Мої клієнти дозволяють мені ділитися їхніми історіями, щоб ви могли впізнати себе в них
+                    </h1>
+                </div>
+            </section>
+
+            <section class="cases-section" id="cases" aria-labelledby="caseTitle">
+                <div class="cases-container">
+                    <!-- Зміну кейсу озвучує скрінрідер -->
+                    <div class="case-heading" aria-live="polite">
+                        <span class="case-category" id="caseCategory">· Тривога та контроль ·</span>
+                        <h2 id="caseTitle">«Я боюся, що все піде не так!»</h2>
+                    </div>
+
+                    <!-- Без JS видно перший кейс; з JS тексти підставляє cases.js -->
+                    <article class="case-request" id="caseRequest" aria-label="Запит">
+                        <p>Жінка постійно тривожилася через майбутнє. Їй було складно розслабитися, приймати рішення
+                            й довіряти життю. Навіть коли все було добре, вона подумки готувалася до найгіршого.
+                            Її переслідували нав'язливі думки про те, що майбутнє під загрозою.</p>
+                    </article>
+
+                    <div class="case-details">
+                        <section class="case-block">
+                            <h3 class="case-block__label">Робота на сесії</h3>
+                            <div id="caseAnalysis">
+                                <p>Під час сесії досліджували страх невизначеності, потребу все контролювати та
+                                    переконання, що без постійної готовності до небезпеки неможливо бути в безпеці.</p>
+                                <p>Причини цих переконань були пов'язані з дитячим досвідом клієнтки та
+                                    нестабільністю, у якій жила її мати. Мати говорила: «Я не хочу, щоб ти жила,
+                                    як я».</p>
+                                <p>Дівчинка засвоїла уявлення, що життя — страшна річ, а контроль допоможе їй
+                                    утриматися на плаву.</p>
+                            </div>
+                        </section>
+
+                        <section class="case-block">
+                            <h3 class="case-block__label">Усвідомлення</h3>
+                            <div id="caseAwareness">
+                                <p>Контроль став для клієнтки способом захистити себе від можливого болю.</p>
+                                <p>Вона почала досліджувати, як відрізняти реальні ризики від тривожних прогнозів
+                                    і знаходити опору в теперішньому.</p>
+                            </div>
+                        </section>
+
+                        <section class="case-block case-block--result">
+                            <h3 class="case-block__label">Результат</h3>
+                            <div id="caseResult">
+                                <p>Клієнтка отримала інструменти для самоспостереження та роботи зі своїми
+                                    переконаннями.</p>
+                                <p>Вона почала усвідомлювати, що є дорослою людиною і тепер може самостійно
+                                    керувати своїм життям, а не дозволяти дитячим установкам визначати свої
+                                    рішення.</p>
+                            </div>
+                        </section>
+                    </div>
+
+                    <nav class="case-navigation" aria-label="Навігація між історіями">
+                        <button class="case-arrow" id="casePrev" type="button" aria-label="Попередній кейс">←</button>
+                        <span class="case-counter" id="caseCounter">01 / 01</span>
+                        <button class="case-arrow" id="caseNext" type="button" aria-label="Наступний кейс">→</button>
+                    </nav>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html">Анна Багірова</a>
+                <p>Простір внутрішньої трансформації</p>
+            </div>
+
+            <nav class="footer-nav" aria-label="Навігація у футері">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="index.html#services">Послуги</a></li>
+                    <li><a href="cases.html" aria-current="page">Кейси</a></li>
+                    <li><a href="gallerySlade.html">Галерея</a></li>
+                </ul>
+            </nav>
+
+            <ul class="footer-social" aria-label="Соцмережі та месенджери">
+                <li>
+                    <a href="https://www.facebook.com/anna.osipenko.bagirova" target="_blank" rel="noopener"
+                        aria-label="Facebook (відкриється в новій вкладці)">
+                        <img src="icon/magnific_fb.webp" alt="" width="30" height="30" loading="lazy" decoding="async">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/anna.bagirova.teta/" target="_blank" rel="noopener"
+                        aria-label="Instagram (відкриється в новій вкладці)">
+                        <img src="icon/magnific_lnst.webp" alt="" width="30" height="30" loading="lazy"
+                            decoding="async">
+                    </a>
+                </li>
+                <li>
+                    <a href="viber://chat?number=%2B380976798394" aria-label="Viber">
+                        <img src="icon/magnific_vb.webp" alt="" width="30" height="30" loading="lazy" decoding="async">
+                    </a>
+                </li>
+                <li>
+                    <!-- ЗАГЛУШКА Telegram: заміни https://t.me/ на https://t.me/твій_нікнейм -->
+                    <a href="https://t.me/" target="_blank" rel="noopener"
+                        aria-label="Telegram (відкриється в новій вкладці)">
+                        <img src="icon/magnific_tl.webp" alt="" width="30" height="30" loading="lazy" decoding="async">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Анна Багірова. Усі права захищено.</p>
+            <a href="privacy.html">Політика конфіденційності</a>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+    <script src="cases.js" defer></script>
+</body>
+
+</html>

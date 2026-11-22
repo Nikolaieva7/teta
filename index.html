@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags
+         ЗАГЛУШКА ДОМЕНУ: коли буде домен, заміни https://example.com на свій
+         (Ctrl+H → «https://example.com» → «https://твій-домен») у всіх HTML-файлах. -->
+    <title>Анна Багірова — тетапрактик, таролог, нумеролог</title>
+    <meta name="description"
+        content="Індивідуальні консультації від Анни Багірової: тета-хілінг, Таро, матриця долі та нумерологія. Звільніться від обмежувальних переконань і змініть своє життя на краще.">
+    <link rel="canonical" href="https://example.com/">
+
+    <!-- Open Graph / Facebook / Telegram / Viber -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="uk_UA">
+    <meta property="og:url" content="https://example.com/">
+    <meta property="og:title" content="Анна Багірова — тетапрактик, таролог, нумеролог">
+    <meta property="og:description"
+        content="Індивідуальні консультації, Таро, нумерологія та тета-практика. Створи життя, у якому тобі добре.">
+    <meta property="og:image" content="https://example.com/img/anna.teta_greatePhoto.webp">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Анна Багірова — тетапрактик, таролог, нумеролог">
+    <meta name="twitter:description"
+        content="Індивідуальні сесії з тета-практики, Таро та нумерології для гармонії та внутрішнього балансу.">
+    <meta name="twitter:image" content="https://example.com/img/anna.teta_greatePhoto.webp">
+
+    <!-- Schema.org structured data (JSON-LD).
+         Коли з'явиться Telegram — додай його адресу в "sameAs". -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Анна Багірова — Тетапрактик, Таролог, Нумеролог",
+      "image": "https://example.com/img/anna.teta_greatePhoto.webp",
+      "@id": "https://example.com/#professional-service",
+      "url": "https://example.com/",
+      "telephone": "+380976798394",
+      "priceRange": "€€",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "UA"
+      },
+      "sameAs": [
+        "https://www.instagram.com/anna.bagirova.teta/",
+        "https://www.facebook.com/anna.osipenko.bagirova"
+      ]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;1,400&amp;family=Playfair+Display+SC:ital,wght@0,400;1,400&amp;display=swap"
+        rel="stylesheet">
+
+    <meta name="theme-color" content="#191d30">
+    <link rel="preload" as="image" href="img/anna.teta_greatePhoto.webp" type="image/webp" fetchpriority="high">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header" id="header">
+        <div class="header-inner">
+            <div class="brand-name">
+                <a href="#hero"><i>А.</i> Багірова</a>
+                <span class="brand-sub">Тетапрактик · таролог · нумеролог</span>
+            </div>
+
+            <nav class="site-nav" id="nav" aria-label="Головне меню">
+                <ul>
+                    <li><a href="#hero">Головна</a></li>
+                    <li><a href="#services">Послуги</a></li>
+                    <li><a href="cases.html">Кейси</a></li>
+                    <li><a href="gallerySlade.html">Галерея</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="tel:+380976798394" class="header-contact">097 679 83 94</a>
+                <button class="hamburger" id="hamburger" type="button" aria-label="Меню" aria-expanded="false"
+                    aria-controls="nav">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <p class="hero-text">Терапія, яка змінює життя</p>
+                <h1>
+                    <span>Створи життя,</span>
+                    <span class="hero-title-accent">у якому тобі добре</span>
+                </h1>
+                <a href="#contact" class="hero-button">Записатися на консультацію</a>
+            </div>
+
+            <div class="hero-image-overlay">
+                <img class="hero-image" src="img/anna.teta_greatePhoto.webp" width="1122" height="1402"
+                    alt="Анна Багірова — тета-практик, таролог і нумеролог" fetchpriority="high">
+                <span class="hero-frame-star hero-frame-star--left" aria-hidden="true">✧</span>
+                <span class="hero-frame-star hero-frame-star--right" aria-hidden="true">✧</span>
+            </div>
+
+            <div class="hero-services">
+                <ul class="hero-services__list" aria-label="Напрями практики">
+                    <li>
+                        <a class="hero-services__item" href="#teta">
+                            <img class="hero-services__icon" src="hero-decorations/theta-lotus.webp" alt="" width="90"
+                                height="90">
+                            <span>
+                                <span class="hero-services__title">Тета-хілінг</span>
+                                <span class="hero-services__text">Глибинна робота з підсвідомістю</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hero-services__item" href="#taro">
+                            <img class="hero-services__icon" src="hero-decorations/tarot-cards.webp" alt="" width="90"
+                                height="90">
+                            <span>
+                                <span class="hero-services__title">Таро</span>
+                                <span class="hero-services__text">Відповіді на важливі запитання</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hero-services__item" href="#num">
+                            <img class="hero-services__icon" src="hero-decorations/numerology-mandala.webp" alt=""
+                                width="90" height="90">
+                            <span>
+                                <span class="hero-services__title">Нумерологія</span>
+                                <span class="hero-services__text">Код твоєї особистості та потенціалу</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Сцена «наїзду»: promo прилипає до верху, блок з відео наїжджає на нього.
+             Обгортка обмежує прилипання — далі promo прокручується разом зі сторінкою. -->
+        <div class="promo-scene">
+        <section class="promo-section" id="promo" aria-labelledby="promo-heading" aria-roledescription="карусель"
+            hidden>
+            <h2 class="visually-hidden" id="promo-heading">Акції та новинки</h2>
+
+            <div class="promo-list" id="promo-list" aria-live="off"></div>
+
+            <div class="promo-controls" hidden>
+                <button type="button" class="promo-pause" aria-label="Зупинити автопрокрутку">
+                    <span aria-hidden="true">❚❚</span>
+                </button>
+                <div class="promo-dots"></div>
+            </div>
+
+            <template id="promo-template">
+                <article class="promo">
+                    <div class="promo-content">
+                        <p class="promo-label" data-field="label"></p>
+                        <h3 class="promo-title" data-field="title"></h3>
+                        <p class="promo-description" data-field="description"></p>
+                    </div>
+
+                    <div class="promo-offer">
+                        <div class="promo-offer__top" data-hide>
+                            <span class="promo-offer__caption" data-field="caption"></span>
+                            <span class="promo-discount" data-field="badge"></span>
+                        </div>
+
+                        <p class="promo-prices" data-hide>
+                            <s class="promo-old-price" data-hide>
+                                <span class="visually-hidden">Стара ціна:</span>
+                                <span data-field="oldPrice"></span>
+                            </s>
+                            <span class="promo-new-price">
+                                <span class="visually-hidden">Ціна:</span>
+                                <span data-field="price"></span>
+                            </span>
+                        </p>
+
+                        <p class="promo-offer__note" data-field="note"></p>
+
+                        <a class="promo-button" href="#contact">
+                            <span data-field="ctaText"></span>
+                            <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18" fill="none"
+                                stroke="currentColor" stroke-width="1.7">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+            </template>
+        </section>
+
+        <section class="event-video" aria-labelledby="event-video-title">
+            <div class="event-video__inner">
+                <div class="event-video__content">
+                    <p class="event-video__label">Моменти, які залишаються...</p>
+
+                    <h2 class="event-video__title" id="event-video-title">
+                        Я створюю простір, у якому відбувається
+                        <span class="event-video__accent">справжня зустріч із собою</span>
+                    </h2>
+
+                    <div class="event-video__divider" aria-hidden="true">✧</div>
+
+                    <p class="event-video__description">
+                        Зустрічі, практики та живе спілкування — це можливість побачити себе
+                        по-новому та відчути підтримку людей, які проходять схожий шлях.
+                    </p>
+                    <p class="event-video__description event-video__description--secondary">
+                        Не лише слова, а власний досвід. Те, що відчувається наживо
+                        і залишається всередині після зустрічі.
+                    </p>
+                </div>
+
+                <div class="event-video__frame">
+                    <video class="event-video__video" src="video/event.mp4" poster="video/event-poster.webp"
+                        muted loop playsinline preload="none" aria-hidden="true"></video>
+                    <button class="event-video__toggle" type="button" aria-label="Зупинити відео" hidden>
+                        <span aria-hidden="true">❚❚</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        </div>
+
+        <section class="services" id="services">
+            <div class="services-header">
+                <span class="label">Послуги</span>
+                <h2 class="text-accent" id="services-title">Обери свій формат співпраці</h2>
+                <p>Нумерологія, Тета-практики та Таро — інструменти для глибшого розуміння себе, своїх сценаріїв та
+                    життєвих ситуацій.</p>
+            </div>
+
+            <div class="services-list">
+                <!-- НУМЕРОЛОГІЯ -->
+                <h3 class="category-title" id="num">Нумерологія</h3>
+                <span class="about-divider" aria-hidden="true">✧</span>
+
+                <article class="card">
+                    <div>
+                        <h4>Матриця Долі для дорослих</h4>
+                        <p>Глибокий аналіз потенціалів, талантів, життєвих уроків та сценаріїв.</p>
+                        <button type="button" class="toggle-btn" aria-expanded="false" aria-controls="service-details-1"
+                            aria-label="Деталі послуги: Матриця Долі для дорослих"></button>
+                        <ul id="service-details-1">
+                            <li>сильні сторони та здібності</li>
+                            <li>призначення та реалізація</li>
+                            <li>фінансовий потенціал</li>
+                            <li>любов і партнерські сценарії</li>
+                            <li>повторювані життєві сценарії</li>
+                            <li>ресурси та точки розвитку</li>
+                            <li>важливі періоди життя</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">50 €</span>
+                        <a href="#contact" class="btn">Записатися</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div>
+                        <span class="card-label">Для дітей 0–17 років</span>
+                        <h4>Матриця Долі для дитини</h4>
+                        <p>Допомагає батькам краще зрозуміти характер, темперамент, таланти та потреби дитини.</p>
+                        <button type="button" class="toggle-btn" aria-expanded="false" aria-controls="service-details-2"
+                            aria-label="Деталі послуги: Матриця Долі для дитини"></button>
+                        <ul id="service-details-2">
+                            <li>природні здібності та таланти</li>
+                            <li>характер і темперамент</li>
+                            <li>мотивація дитини</li>
+                            <li>навчання та реалізація талантів</li>
+                            <li>сильні та вразливі сторони</li>
+                            <li>можливі конфліктні сценарії</li>
+                            <li>як підтримувати дитину</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">40 €</span>
+                        <a href="#contact" class="btn">Записатися</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div>
+                        <span class="card-label">Для двох людей</span>
+                        <h4>Матриця Сумісності</h4>
+                        <p>Аналіз взаємодії двох людей, ресурсів пари, конфліктів та потенціалу розвитку стосунків.</p>
+                        <button type="button" class="toggle-btn" aria-expanded="false" aria-controls="service-details-3"
+                            aria-label="Деталі послуги: Матриця Сумісності"></button>
+                        <ul id="service-details-3">
+                            <li>що вас притягує</li>
+                            <li>ресурс пари</li>
+                            <li>можливі конфлікти</li>
+                            <li>емоційна та сексуальна взаємодія</li>
+                            <li>фінансові сценарії</li>
+                            <li>побутова сумісність</li>
+                            <li>потенціал розвитку стосунків</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">50 €</span>
+                        <a href="#contact" class="btn">Записатися</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div>
+                        <span class="card-label">Аналіз особистості</span>
+                        <h4>Психоматриця</h4>
+                        <p>Спосіб глибше подивитися на особистісні якості людини через дату народження.</p>
+                        <button type="button" class="toggle-btn" aria-expanded="false" aria-controls="service-details-4"
+                            aria-label="Деталі послуги: Психоматриця"></button>
+                        <ul id="service-details-4">
+                            <li>характер</li>
+                            <li>сила волі</li>
+                            <li>енергетичний потенціал</li>
+                            <li>логіка та інтуїція</li>
+                            <li>цілеспрямованість</li>
+                            <li>здібності до навчання</li>
+                            <li>сильні та слабкі сторони</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">30 €</span>
+                        <a href="#contact" class="btn">Записатися</a>
+                    </div>
+                </article>
+
+                <!-- ТЕТА-ПОСЛУГИ -->
+                <h3 class="category-title" id="teta">Тета-послуги</h3>
+                <span class="about-divider" aria-hidden="true">✧</span>
+
+                <article class="card">
+                    <div>
+                        <span class="card-label">40 хвилин</span>
+                        <h4>Експрес-консультація</h4>
+                        <p>Коли потрібно побачити ситуацію під іншим кутом та зрозуміти, куди рухатися далі.</p>
+                        <button type="button" class="toggle-btn" aria-expanded="false" aria-controls="service-details-5"
+                            aria-label="Деталі послуги: Експрес-консультація"></button>
+                        <ul id="service-details-5">
+                            <li>стосунки</li>
+                            <li>рішення</li>
+                            <li>гроші</li>
+                            <li>робота</li>
+                            <li>внутрішній стан</li>
+                            <li>конфліктна ситуація</li>
+                            <li>повторюваний сценарій</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">30 €</span>
+                        <a href="#contact" class="btn">Записатися</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div>
+                        <span class="card-label">1,5 години</span>
+                        <h4>Тета-сесія</h4>
+                        <p>Глибока індивідуальна робота, під час якої досліджуємо не лише проблему, а й причини її
+                            повторення.</p>
+                        <button type="button" class="toggle-btn" aria-expanded="false" aria-controls="service-details-6"
+                            aria-label="Деталі послуги: Тета-сесія"></button>
+                        <ul id="service-details-6">
+                            <li>що відбувається</li>
+                            <li>чому це повторюється</li>
+                            <li>що ти відчуваєш</li>
+                            <li>у що ти віриш про себе та світ</li>
+                            <li>що заважає отримати бажане</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">76 €</span>
+                        <a href="#contact" class="btn">Записатися</a>
+                    </div>
+                </article>
+
+                <article class="card featured">
+                    <div>
+                        <span class="card-label">Пакет • 3 сесії</span>
+                        <h4>Глибока трансформація</h4>
+                        <p>Для запитів, які неможливо якісно опрацювати за одну зустріч.</p>
+                        <button type="button" class="toggle-btn" aria-expanded="false" aria-controls="service-details-7"
+                            aria-label="Деталі послуги: Глибока трансформація"></button>
+                        <ul id="service-details-7">
+                            <li>3 Тета-сесії по 1,5 години</li>
+                            <li>один великий запит</li>
+                            <li>або кілька взаємопов'язаних тем</li>
+                            <li>стосунки та самоцінність</li>
+                            <li>гроші та установки</li>
+                            <li>самооцінка та кордони</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">198 €</span>
+                        <a href="#contact" class="btn">Обрати пакет</a>
+                    </div>
+                </article>
+
+                <article class="card featured">
+                    <div>
+                        <span class="card-label">Комплексний пакет</span>
+                        <h4>Трансформація + Матриця Долі</h4>
+                        <p>Комплексний формат для тих, хто хоче побачити свій сценарій і працювати з тим, що заважає
+                            його змінювати.</p>
+                        <button type="button" class="toggle-btn" aria-expanded="false" aria-controls="service-details-8"
+                            aria-label="Деталі послуги: Трансформація + Матриця Долі"></button>
+                        <ul id="service-details-8">
+                            <li>3 Тета-сесії по 1,5 години</li>
+                            <li>Матриця Долі для дорослого</li>
+                            <li>або Дитяча Матриця Долі</li>
+                            <li>або Матриця Сумісності</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">230 €</span>
+                        <a href="#contact" class="btn">Обрати пакет</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div>
+                        <span class="card-label">9 днів до + день народження + 9 днів після</span>
+                        <h4>Божественний розклад у день народження</h4>
+                        <p>Формат для переходу в новий особистий рік. Можливість озирнутися на пройдений рік та
+                            подивитися на напрямок нового.</p>
+                        <button type="button" class="toggle-btn" aria-expanded="false" aria-controls="service-details-9"
+                            aria-label="Деталі послуги: Божественний розклад у день народження"></button>
+                        <ul id="service-details-9">
+                            <li>головна енергія нового року</li>
+                            <li>стосунки</li>
+                            <li>фінанси</li>
+                            <li>робота та реалізація</li>
+                            <li>можливості та виклики</li>
+                            <li>головний ресурс</li>
+                            <li>рекомендації на особистий рік</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">60 €</span>
+                        <a href="#contact" class="btn">Записатися</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div>
+                        <span class="card-label">Повернення своєї енергії</span>
+                        <h4>Відв'язка від колишніх стосунків</h4>
+                        <p>Робота з внутрішнім переживанням завершених стосунків, емоційними прив'язаностями та
+                            поверненням фокусу на себе.</p>
+                        <button type="button" class="toggle-btn" aria-expanded="false"
+                            aria-controls="service-details-10"
+                            aria-label="Деталі послуги: Відв'язка від колишніх стосунків"></button>
+                        <ul id="service-details-10">
+                            <li>що досі тримає у цих стосунках</li>
+                            <li>які емоції залишилися</li>
+                            <li>які прив'язаності сформувалися</li>
+                            <li>що важливо забрати з цього досвіду</li>
+                            <li>як повернути фокус на себе</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">90 €</span>
+                        <a href="#contact" class="btn">Записатися</a>
+                    </div>
+                </article>
+
+                <article class="card featured">
+                    <div>
+                        <span class="card-label">8 зустрічей по 1 годині</span>
+                        <h4>Авторська трансформаційна Тета-гра</h4>
+                        <p>«Пізнай свій внутрішній світ» — глибший трансформаційний процес, що допомагає досліджувати
+                            різні сфери життя.</p>
+                        <button type="button" class="toggle-btn" aria-expanded="false"
+                            aria-controls="service-details-11"
+                            aria-label="Деталі послуги: Авторська трансформаційна Тета-гра"></button>
+                        <ul id="service-details-11">
+                            <li>справжні бажання</li>
+                            <li>внутрішні обмеження та страхи</li>
+                            <li>установки та сценарії</li>
+                            <li>стосунки із собою та іншими</li>
+                            <li>гроші та реалізація</li>
+                            <li>внутрішні ресурси</li>
+                            <li>нові можливості</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">250 €</span>
+                        <a href="#contact" class="btn">Обрати програму</a>
+                    </div>
+                </article>
+
+                <!-- ТАРО -->
+                <h3 class="category-title" id="taro">Таро</h3>
+                <span class="about-divider" aria-hidden="true">✧</span>
+
+                <article class="card">
+                    <div>
+                        <span class="card-label">Одне конкретне питання</span>
+                        <h4>Експрес-розклад</h4>
+                        <p>Швидкий формат для конкретного запиту щодо стосунків, фінансів, роботи або рішення.</p>
+                        <button type="button" class="toggle-btn" aria-expanded="false"
+                            aria-controls="service-details-12" aria-label="Деталі послуги: Експрес-розклад"></button>
+                        <ul id="service-details-12">
+                            <li>що відбувається між нами</li>
+                            <li>що людина відчуває</li>
+                            <li>про що думає</li>
+                            <li>які її наміри</li>
+                            <li>що відбувається у фінансах</li>
+                            <li>куди рухатися у роботі</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">17 €</span>
+                        <a href="#contact" class="btn">Записатися</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div>
+                        <span class="card-label">Для завершених стосунків</span>
+                        <h4>«Ми після розлучення / розриву»</h4>
+                        <p>Для ситуацій, коли стосунки завершилися, але питання та емоційний зв'язок залишилися.</p>
+                        <button type="button" class="toggle-btn" aria-expanded="false"
+                            aria-controls="service-details-13"
+                            aria-label="Деталі послуги: «Ми після розлучення / розриву»"></button>
+                        <ul id="service-details-13">
+                            <li>причина розриву</li>
+                            <li>що людина відчуває зараз</li>
+                            <li>емоційний зв'язок</li>
+                            <li>можливість відновлення контакту</li>
+                            <li>що заважає примиренню</li>
+                            <li>рекомендація</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">39 €</span>
+                        <a href="#contact" class="btn">Записатися</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div>
+                        <span class="card-label">Аналіз стосунків</span>
+                        <h4>«Чи є перспектива у наших стосунках?»</h4>
+                        <p>Розклад для тих, хто хоче зрозуміти, куди рухаються стосунки.</p>
+                        <button type="button" class="toggle-btn" aria-expanded="false"
+                            aria-controls="service-details-14"
+                            aria-label="Деталі послуги: «Чи є перспектива у наших стосунках?»"></button>
+                        <ul id="service-details-14">
+                            <li>потенціал пари</li>
+                            <li>думки та почуття партнера</li>
+                            <li>наміри</li>
+                            <li>готовність до серйозних стосунків</li>
+                            <li>проблемні точки</li>
+                            <li>перспектива офіційних стосунків</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">34 €</span>
+                        <a href="#contact" class="btn">Записатися</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div>
+                        <span class="card-label">Любовний трикутник</span>
+                        <h4>«Трикутник»</h4>
+                        <p>Для ситуацій, коли у стосунках присутня третя людина або є підозри на любовний трикутник.</p>
+                        <button type="button" class="toggle-btn" aria-expanded="false"
+                            aria-controls="service-details-15" aria-label="Деталі послуги: «Трикутник»"></button>
+                        <ul id="service-details-15">
+                            <li>що відбувається між партнерами</li>
+                            <li>роль третьої людини</li>
+                            <li>почуття та наміри кожного</li>
+                            <li>що приховано</li>
+                            <li>куди рухається ситуація</li>
+                            <li>рекомендація</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">39 €</span>
+                        <a href="#contact" class="btn">Записатися</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div>
+                        <span class="card-label">Фінанси та реалізація</span>
+                        <h4>«Гроші та реалізація»</h4>
+                        <p>Для тих, хто стоїть на роздоріжжі або хоче зрозуміти свою фінансову ситуацію.</p>
+                        <button type="button" class="toggle-btn" aria-expanded="false"
+                            aria-controls="service-details-16"
+                            aria-label="Деталі послуги: «Гроші та реалізація»"></button>
+                        <ul id="service-details-16">
+                            <li>що відбувається з фінансами</li>
+                            <li>що блокує рух</li>
+                            <li>де можливості</li>
+                            <li>що може принести прибуток</li>
+                            <li>професійний напрямок</li>
+                            <li>найближчі тенденції</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">39 €</span>
+                        <a href="#contact" class="btn">Записатися</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div>
+                        <span class="card-label">Для складного вибору</span>
+                        <h4>«Мій наступний крок»</h4>
+                        <p>Для ситуації, коли ти не знаєш, яке рішення прийняти.</p>
+                        <button type="button" class="toggle-btn" aria-expanded="false"
+                            aria-controls="service-details-17"
+                            aria-label="Деталі послуги: «Мій наступний крок»"></button>
+                        <ul id="service-details-17">
+                            <li>порівняння двох варіантів</li>
+                            <li>можливі наслідки кожного шляху</li>
+                            <li>ресурсний напрямок</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">24 €</span>
+                        <a href="#contact" class="btn">Записатися</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div>
+                        <span class="card-label">Наступні 30 днів</span>
+                        <h4>«Розклад на місяць»</h4>
+                        <p>Комплексний погляд на найближчі 30 днів та ключові тенденції періоду.</p>
+                        <button type="button" class="toggle-btn" aria-expanded="false"
+                            aria-controls="service-details-18"
+                            aria-label="Деталі послуги: «Розклад на місяць»"></button>
+                        <ul id="service-details-18">
+                            <li>стосунки</li>
+                            <li>гроші</li>
+                            <li>робота</li>
+                            <li>стан</li>
+                            <li>можливості</li>
+                            <li>виклики</li>
+                            <li>головна подія</li>
+                            <li>рекомендація місяця</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">35 €</span>
+                        <a href="#contact" class="btn">Записатися</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div>
+                        <span class="card-label">Повний Таро-розклад</span>
+                        <h4>«Моє життя зараз»</h4>
+                        <p>Для тих, хто хоче подивитися на життя комплексно.</p>
+                        <button type="button" class="toggle-btn" aria-expanded="false"
+                            aria-controls="service-details-19" aria-label="Деталі послуги: «Моє життя зараз»"></button>
+                        <ul id="service-details-19">
+                            <li>любов і стосунки</li>
+                            <li>фінанси</li>
+                            <li>робота та реалізація</li>
+                            <li>внутрішній стан</li>
+                            <li>оточення</li>
+                            <li>приховані фактори</li>
+                            <li>можливості та перешкоди</li>
+                            <li>головний напрямок</li>
+                            <li>рекомендації</li>
+                        </ul>
+                    </div>
+                    <div class="card-footer">
+                        <span class="price">50 €</span>
+                        <a href="#contact" class="btn">Записатися</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="about-section" id="about" aria-labelledby="about-title">
+            <div class="about-container">
+                <div class="about-content">
+                    <p class="about-eyebrow">Знайомство</p>
+                    <h2 id="about-title">Анна Багірова — тета-практик, таролог, нумеролог</h2>
+                    <div class="about-divider" aria-hidden="true">✧</div>
+
+                    <p class="about-intro">
+                        Допомагаю жінкам зрозуміти себе, звільнитися від обмежувальних переконань
+                        і знайти новий напрямок у стосунках, самореалізації та житті.
+                    </p>
+
+                    <dl class="about-qa">
+                        <dt>Для кого я?</dt>
+                        <dd>Для жінок, які втратили впевненість у собі, переживають кризу у стосунках, бояться змін,
+                            недооцінюють себе або відчувають, що заслуговують на більше.</dd>
+
+                        <dt>З чим працюю?</dt>
+                        <dd>З підсвідомими переконаннями, страхами, почуттям провини та сорому, повторюваними життєвими
+                            сценаріями, питаннями самореалізації, фінансів і стосунків.</dd>
+
+                        <dt>Чим можу допомогти?</dt>
+                        <dd>За допомогою методик тета-хілінгу, Таро та нумерології допомагаю глибше зрозуміти себе,
+                            побачити нові можливості й знайти рішення без сорому, провини й страху невдачі.</dd>
+                    </dl>
+                </div>
+
+                <div class="about-visual" data-reveal>
+                    <img src="img/156c7147-e377-4dbe-b176-a937935dcea4.webp" width="1023" height="1538"
+                        alt="Анна Багірова" loading="lazy" decoding="async">
+                </div>
+
+                <div class="about-privacy">
+                    <h3>Твоя приватність — мій пріоритет</h3>
+                    <p>Усе, чим ти ділишся під час наших зустрічей, залишається між нами. Я дбайливо ставлюся
+                        до особистої інформації, історій та переживань кожного клієнта. Ти можеш бути відвертим(-ою),
+                        не хвилюючись про розголошення особистих подробиць.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews-section" id="reviews" aria-labelledby="reviews-title">
+            <header class="reviews-header">
+                <span class="section-label">Враження клієнтів</span>
+                <h2 id="reviews-title">Що кажуть клієнти</h2>
+            </header>
+
+            <div class="reviews-slider">
+                <button class="reviews-arrow reviews-prev" type="button" aria-label="Попередній відгук"
+                    aria-controls="reviewsTrack" hidden>
+                    <span aria-hidden="true">←</span>
+                </button>
+
+                <div class="reviews-track" id="reviewsTrack" role="region" aria-label="Відгуки клієнтів" tabindex="0">
+                    <figure class="review-card">
+                        <blockquote class="review-text">
+                            <p>Я прийшла до Анни із постійним страхом перед майбутнім і відчуттям, що маю все
+                                контролювати. Під час сесії я побачила, наскільки сильно живу в очікуванні поганого
+                                і як на моє сприйняття майбутнього вплинуло моє дитинство. Тепер вчуся повертати увагу
+                                до себе, своїх потреб і того, що можу зробити саме сьогодні. Дякую Анні за дбайливий
+                                супровід.
+                            </p>
+                        </blockquote>
+                        <figcaption class="review-author">
+                            <cite>Олена</cite>
+                            <span>Тета-сесія</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="review-card">
+                        <blockquote class="review-text">
+                            <p>Матриця допомогла мені подивитися на свої сильні сторони зовсім інакше.
+                                Багато речей нарешті склалися в одну картину.</p>
+                        </blockquote>
+                        <figcaption class="review-author">
+                            <cite>Марія</cite>
+                            <span>Матриця Долі</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="review-card">
+                        <blockquote class="review-text">
+                            <p>Добрий день, пані Анно! Я вперше так уважно подивилася на переконання, що любов
+                                потрібно заслужити. Зрозуміла, як часто відмовлялася від себе заради схвалення інших.
+                                Після зустрічі з'явилося більше розуміння себе та бажання змінювати звичні реакції.
+                                Зараз я розумію, що гідна любові, гідна найкращого і можу сама обирати, якими будуть
+                                мої стосунки. Дякую за атмосферу прийняття, делікатну роботу та підтримку!</p>
+                        </blockquote>
+                        <figcaption class="review-author">
+                            <cite>Анонімно</cite>
+                            <span>Таро + Тета-практика</span>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <button class="reviews-arrow reviews-next" type="button" aria-label="Наступний відгук"
+                    aria-controls="reviewsTrack" hidden>
+                    <span aria-hidden="true">→</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact" aria-labelledby="contact-title">
+            <div class="contact-container">
+                <div class="contact-intro">
+                    <span class="section-label">Зв’язок</span>
+                    <h2 id="contact-title">Можеш почати просто з розмови</h2>
+                    <p>
+                        Не обов’язково одразу знати, яка послуга тобі потрібна. Розкажи, що зараз
+                        відбувається у твоєму житті — разом визначимо, з чого краще почати.
+                    </p>
+
+                    <div class="contact-note">
+                        <span class="section-label">Без зобов’язань</span>
+                        <p>Перше повідомлення — це просто можливість описати свій запит і поставити питання.</p>
+                    </div>
+                </div>
+
+                <!-- ФОРМА: дані йдуть у send.php → Telegram (токен зберігається на сервері) -->
+                <form class="contact-form" id="contactForm" action="send.php" method="post" novalidate>
+                    <div class="form-group">
+                        <label for="cf-name">Ім’я</label>
+                        <input id="cf-name" name="name" type="text" autocomplete="name" required maxlength="50"
+                            aria-describedby="cf-name-error">
+                        <p class="field-error" id="cf-name-error"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cf-phone">Телефон</label>
+                        <input id="cf-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required
+                            maxlength="25" placeholder="+380 67 123 45 67" aria-describedby="cf-phone-error">
+                        <p class="field-error" id="cf-phone-error"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="cf-message">Текст звернення</label>
+                        <textarea id="cf-message" name="message" rows="6" required maxlength="2000"
+                            aria-describedby="cf-message-error"></textarea>
+                        <p class="field-error" id="cf-message-error"></p>
+                    </div>
+
+                    <!-- Пастка для ботів: людина це поле не бачить і не заповнює -->
+                    <div class="hp-field" aria-hidden="true">
+                        <label for="cf-website">Ваш вебсайт</label>
+                        <input id="cf-website" name="website" type="text" tabindex="-1" autocomplete="off">
+                    </div>
+
+                    <button type="submit" class="contact-submit">
+                        <span class="contact-submit__spinner" aria-hidden="true"></span>
+                        <span class="contact-submit__text">Відправити</span>
+                        <span class="submit-arrow" aria-hidden="true">→</span>
+                    </button>
+
+                    <p class="form-status" id="cf-status" role="status" aria-live="polite"></p>
+
+                    <noscript>
+                        <p class="form-status" data-status="error">
+                            Для надсилання форми потрібен JavaScript.
+                        </p>
+                    </noscript>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html">Анна Багірова</a>
+                <p>Простір внутрішньої трансформації</p>
+            </div>
+
+            <nav class="footer-nav" aria-label="Навігація у футері">
+                <ul>
+                    <li><a href="#hero">Головна</a></li>
+                    <li><a href="#services">Послуги</a></li>
+                    <li><a href="cases.html">Кейси</a></li>
+                    <li><a href="gallerySlade.html">Галерея</a></li>
+                </ul>
+            </nav>
+
+            <ul class="footer-social" aria-label="Соцмережі та месенджери">
+                <li>
+                    <a href="https://www.facebook.com/anna.osipenko.bagirova" target="_blank" rel="noopener"
+                        aria-label="Facebook (відкриється в новій вкладці)">
+                        <img src="icon/magnific_fb.webp" alt="" width="30" height="30" loading="lazy" decoding="async">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/anna.bagirova.teta/" target="_blank" rel="noopener"
+                        aria-label="Instagram (відкриється в новій вкладці)">
+                        <img src="icon/magnific_lnst.webp" alt="" width="30" height="30" loading="lazy"
+                            decoding="async">
+                    </a>
+                </li>
+                <li>
+                    <a href="viber://chat?number=%2B380976798394" aria-label="Viber">
+                        <img src="icon/magnific_vb.webp" alt="" width="30" height="30" loading="lazy" decoding="async">
+                    </a>
+                </li>
+                <li>
+                    <!-- ЗАГЛУШКА Telegram: заміни https://t.me/ на https://t.me/твій_нікнейм -->
+                    <a href="https://t.me/" target="_blank" rel="noopener"
+                        aria-label="Telegram (відкриється в новій вкладці)">
+                        <img src="icon/magnific_tl.webp" alt="" width="30" height="30" loading="lazy" decoding="async">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Анна Багірова. Усі права захищено.</p>
+            <a href="privacy.html">Політика конфіденційності</a>
+        </div>
+    </footer>
+    <script src="script.js" defer></script>
+</body>
+
+</html>

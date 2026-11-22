@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ЗАГЛУШКА ДОМЕНУ: коли буде домен, заміни https://example.com на свій у всіх HTML-файлах -->
+    <title>Галерея — Анна Багірова</title>
+    <meta name="description"
+        content="Фото Анни Багірової — тета-практика, таролога й нумеролога — та моменти з жіночих зустрічей і практик.">
+    <link rel="canonical" href="https://example.com/gallerySlade.html">
+
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="uk_UA">
+    <meta property="og:url" content="https://example.com/gallerySlade.html">
+    <meta property="og:title" content="Галерея — Анна Багірова">
+    <meta property="og:image" content="https://example.com/img/anna.teta_greatePhoto.webp">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,300;0,400;0,500;1,400&amp;family=Playfair+Display+SC:ital,wght@0,400;1,400&amp;display=swap"
+        rel="stylesheet">
+
+    <meta name="theme-color" content="#191d30">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleSlade.css">
+</head>
+
+<body>
+    <header class="site-header" id="header">
+        <div class="header-inner">
+            <div class="brand-name">
+                <a href="index.html"><i>А.</i> Багірова</a>
+                <span class="brand-sub">Тетапрактик · таролог · нумеролог</span>
+            </div>
+
+            <nav class="site-nav" id="nav" aria-label="Головне меню">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="index.html#services">Послуги</a></li>
+                    <li><a href="cases.html">Кейси</a></li>
+                    <li><a href="gallerySlade.html" aria-current="page">Галерея</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="tel:+380976798394" class="header-contact">097 679 83 94</a>
+                <button class="hamburger" id="hamburger" type="button" aria-label="Меню" aria-expanded="false"
+                    aria-controls="nav">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <h1 class="visually-hidden">Галерея</h1>
+
+        <section class="gallery" aria-roledescription="карусель" aria-label="Фотогалерея">
+            <!-- Перші три слайди видно одразу → без lazy; решта вантажиться за потреби -->
+            <div class="gallery-track">
+                <div class="gallery-slide">
+                    <img src="img/156c7147-e377-4dbe-b176-a937935dcea4.webp" width="1023" height="1538"
+                        alt="Анна Багірова, портрет">
+                </div>
+                <div class="gallery-slide">
+                    <img src="img/anna.teta_greatePhoto.webp" width="1122" height="1402"
+                        alt="Анна Багірова — тета-практик, таролог і нумеролог">
+                </div>
+                <div class="gallery-slide">
+                    <img src="img/DSCF2595.webp" width="1000" height="1500"
+                        alt="Анна Багірова в червоному костюмі на бірюзовому дивані">
+                </div>
+                <div class="gallery-slide">
+                    <img src="img/photo_2024-12-01_10-33-54.webp" width="1000" height="666" loading="lazy"
+                        alt="Учасниці жіночої зустрічі разом з Анною Багіровою">
+                </div>
+                <div class="gallery-slide">
+                    <img src="img/Rectangle 38 (1).webp" width="462" height="510" loading="lazy"
+                        alt="Анна Багірова в червоному жакеті на зеленому кріслі">
+                </div>
+                <div class="gallery-slide">
+                    <img src="img/photo_2024-12-01_10-33-59.webp" width="1000" height="701" loading="lazy"
+                        alt="Анна Багірова веде зустріч для жінок за спільним столом">
+                </div>
+                <div class="gallery-slide">
+                    <img src="img_gallery/photo_2026-11-19_14-05-50.webp" width="591" height="1280" loading="lazy"
+                        alt="Анна Багірова за кавою на літньому майданчику кафе">
+                </div>
+                <div class="gallery-slide">
+                    <img src="img_gallery/IMG_4834.webp" width="1000" height="1333" loading="lazy"
+                        alt="Анна Багірова в чорному пальті біля кам'яної колони">
+                </div>
+                <div class="gallery-slide">
+                    <img src="img_gallery/IMG_4890.webp" width="1000" height="1778" loading="lazy"
+                        alt="Анна Багірова з нотатками під час практики біля вікна">
+                </div>
+            </div>
+
+            <button class="gallery-button prev" type="button" aria-label="Попереднє зображення">
+                <img src="icon/chevron_9138861left.png" alt="">
+            </button>
+            <button class="gallery-button next" type="button" aria-label="Наступне зображення">
+                <img src="icon/chevron_9138861left.png" alt="">
+            </button>
+
+            <p class="visually-hidden" id="gallery-status" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="index.html">Анна Багірова</a>
+                <p>Простір внутрішньої трансформації</p>
+            </div>
+
+            <nav class="footer-nav" aria-label="Навігація у футері">
+                <ul>
+                    <li><a href="index.html">Головна</a></li>
+                    <li><a href="index.html#services">Послуги</a></li>
+                    <li><a href="cases.html">Кейси</a></li>
+                    <li><a href="gallerySlade.html" aria-current="page">Галерея</a></li>
+                </ul>
+            </nav>
+
+            <ul class="footer-social" aria-label="Соцмережі та месенджери">
+                <li>
+                    <a href="https://www.facebook.com/anna.osipenko.bagirova" target="_blank" rel="noopener"
+                        aria-label="Facebook (відкриється в новій вкладці)">
+                        <img src="icon/magnific_fb.webp" alt="" width="30" height="30" loading="lazy" decoding="async">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/anna.bagirova.teta/" target="_blank" rel="noopener"
+                        aria-label="Instagram (відкриється в новій вкладці)">
+                        <img src="icon/magnific_lnst.webp" alt="" width="30" height="30" loading="lazy"
+                            decoding="async">
+                    </a>
+                </li>
+                <li>
+                    <a href="viber://chat?number=%2B380976798394" aria-label="Viber">
+                        <img src="icon/magnific_vb.webp" alt="" width="30" height="30" loading="lazy" decoding="async">
+                    </a>
+                </li>
+                <li>
+                    <!-- ЗАГЛУШКА Telegram: заміни https://t.me/ на https://t.me/твій_нікнейм -->
+                    <a href="https://t.me/" target="_blank" rel="noopener"
+                        aria-label="Telegram (відкриється в новій вкладці)">
+                        <img src="icon/magnific_tl.webp" alt="" width="30" height="30" loading="lazy" decoding="async">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Анна Багірова. Усі права захищено.</p>
+            <a href="privacy.html">Політика конфіденційності</a>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+    <script src="gallery.js" defer></script>
+</body>
+
+</html>
